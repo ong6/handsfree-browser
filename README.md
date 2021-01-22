@@ -1,14 +1,12 @@
 # The Handsfree Browser Extension
 
-> 🚨 This project is useable but not officially released. I don't recommend to using it just yet 😅
->
-> The documentation for this extension will be hosted at https://handsfree.js.org/browser-extension/
+> 🚧🐞 This project is useable but not officially released and still buggy :) 🐞🚧
 
-This [Handsfree.js](https://handsfree.js.org) powered browser extension is a designed to help you browse the web handsfree through face and/or hand gestures. The aspiration is to develop a "[Userscript Manager](https://en.wikipedia.org/wiki/Userscript_manager)" like [Tampermonkey](https://www.tampermonkey.net/), but for handsfree-ifying web pages, games, apps, WebXR and really any other type of content found the web.
+This [Handsfree.js](https://handsfree.js.org) powered browser extension is a designed to help you browse the web handsfree through face and/or hand gestures. The goal is to develop a "[Userscript Manager](https://en.wikipedia.org/wiki/Userscript_manager)" like [Tampermonkey](https://www.tampermonkey.net/), but for handsfree-ifying web pages, games, apps, WebXR and really any other type of content found the web.
 
 This browser extension also includes a handsfree fork of the [Mozilla WebXR Emulator Extension](https://github.com/MozillaReality/WebXR-emulator-extension) Dev Tools, primarily to assist in handsfree WebXR development.
 
-In short, this extension is designed to help you use your entire browser and web totally handsfree!
+In short, this extension will help you use your entire browser, desktop, or connected drones, robots, and more in customizable and interesting new ways 🖐👀🖐
 
 <br>
 <br>
@@ -41,9 +39,7 @@ However, in addition to the pointers you can add custom handsfree interactions. 
 
 # Handsfree WebXR DevTools
 
-This project is a started as a fork of the [Mozilla WebXR Emulator Extension](https://github.com/MozillaReality/WebXR-emulator-extension). This section of the browser extension was initiated from conversations with [Alex Ionkov](http://pages.cs.wisc.edu/~ionkov/).
-
-Currently the DevTools helps you emulate WebXR headsets with basic controller support.
+This project is a started as a fork of the [Mozilla WebXR Emulator Extension](https://github.com/MozillaReality/WebXR-emulator-extension). Currently the DevTools helps you emulate WebXR headsets with basic controller support.
 
 ![](https://media1.giphy.com/media/w3JUFtNyXNafLVrh6F/giphy.gif)
 ![](https://media2.giphy.com/media/wizgcDoxSs4PIdA1Pc/giphy.gif)
