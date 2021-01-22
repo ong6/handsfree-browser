@@ -1,7 +1,7 @@
 /**
  * Direct a choir of blobs in goosebump-inducing harmony
  * - Only works with one pinch at a time
- * 
+ * @see https://artsandculture.google.com/experiment/AAHWrq360NcGbw
  * @see https://handsfree.js.org/ref/plugin/pinchers.html#pinch-states-with-pinchstate
  */
 
