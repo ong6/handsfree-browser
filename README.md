@@ -1,10 +1,14 @@
 # The Handsfree Browser Extension
 
-> 🚨 This project useable but not officially released yet
+> 🚨 This project is useable but not officially released. I don't recommend to using it just yet 😅
+>
+> The documentation for this extension will be hosted at https://handsfree.js.org/browser-extension/
 
-This [Handsfree.js](https://handsfree.js.org) powered browser extension is a designed to help you browse the web handsfree through face and/or hand gestures. The aspiration is to develop a "User Script Manager" like [Tampermonkey](https://www.tampermonkey.net/) and [Greasemonkey](https://www.greasespot.net/), but for handsfree-ifying web pages, web games, web apps, and any other type of content found online.
+This [Handsfree.js](https://handsfree.js.org) powered browser extension is a designed to help you browse the web handsfree through face and/or hand gestures. The aspiration is to develop a "[Userscript Manager](https://en.wikipedia.org/wiki/Userscript_manager)" like [Tampermonkey](https://www.tampermonkey.net/), but for handsfree-ifying web pages, games, apps, WebXR and really any other type of content found the web.
 
-This browser extension also includes handsfree Dev Tools, primarily to assist in handsfree WebXR development. In short, this extension is designed to help you use your entire browser and web totally handsfree!
+This browser extension also includes a handsfree fork of the [Mozilla WebXR Emulator Extension](https://github.com/MozillaReality/WebXR-emulator-extension) Dev Tools, primarily to assist in handsfree WebXR development.
+
+In short, this extension is designed to help you use your entire browser and web totally handsfree!
 
 <br>
 <br>
@@ -18,12 +22,14 @@ This browser extension also includes handsfree Dev Tools, primarily to assist in
 
 By default, each page will get a "Face Pointer" or a set of "Palm Pointers" for you to browse pages handsfree.
 
-![](https://media3.giphy.com/media/Iv2aSMS0QTy2P5JNCX/giphy.gif)
-![](https://media3.giphy.com/media/BSkodGjuwBPAEwxjGv/giphy.gif)
+![A person controlling a virtual mouse pointer by tilting their head around](https://media3.giphy.com/media/Iv2aSMS0QTy2P5JNCX/giphy.gif)
+![A person scrolling a page by pinching their index and thumb together and raising or lowering their pinched hand](https://media3.giphy.com/media/BSkodGjuwBPAEwxjGv/giphy.gif)
 
-However, in addition to the pointers you can add custom handsfree interactions. For example, here's a demonstration of handsfree-ifying Jason Webb's [Reaction Diffusion Playgound](https://jasonwebb.github.io/reaction-diffusion-playground/) where each individual finger pinch does something different:
+However, in addition to the pointers you can add custom handsfree interactions. For example, here's a demonstration of handsfree-ifying different things:
 
-![](https://media4.giphy.com/media/YB5GHxDKDFti74Jzz9/giphy.gif)
+![Creating generative art with hand gestures](https://media4.giphy.com/media/YB5GHxDKDFti74Jzz9/giphy.gif)
+![A person pinching the air to "pinch" a blob. Moving a pinched blob causes it to sing in a different pitch](https://media1.giphy.com/media/k1JWC1insGrfX1CSNu/giphy.gif)
+
 
 <br>
 <br>
@@ -40,7 +46,7 @@ This project is a started as a fork of the [Mozilla WebXR Emulator Extension](ht
 Currently the DevTools helps you emulate WebXR headsets with basic controller support.
 
 ![](https://media1.giphy.com/media/w3JUFtNyXNafLVrh6F/giphy.gif)
-![]()
+![](https://media2.giphy.com/media/wizgcDoxSs4PIdA1Pc/giphy.gif)
 
 <br>
 <br>
@@ -81,7 +87,7 @@ Each of the files are located in their respective context folders in `/src/`. Ha
 <br>
 <br>
 
-# Acknowledgemetns
+# Acknowledgements
 
 - [Alex Ionkov](http://pages.cs.wisc.edu/~ionkov/) for the original handsfree WebXR Emulator vision, research, and our planning and discussions
 - [Mozilla WebXR Emulator Extension team](https://github.com/MozillaReality/WebXR-emulator-extension) from which the WebXR Emulator Dev Tools was forked from
