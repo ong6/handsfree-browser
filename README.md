@@ -1,6 +1,6 @@
 # The Handsfree Browser Extension
 
-> 🚧🐞 This project is useable but not officially released and still buggy :) 🐞🚧
+> 🚧🐞 This project is useable but not officially released and still buggy 🐞🚧
 
 This [Handsfree.js](https://handsfree.js.org) powered browser extension is a designed to help you browse the web handsfree through face and/or hand gestures. The goal is to develop a "[Userscript Manager](https://en.wikipedia.org/wiki/Userscript_manager)" like [Tampermonkey](https://www.tampermonkey.net/), but for handsfree-ifying web pages, games, apps, WebXR and really any other type of content found the web.
 
