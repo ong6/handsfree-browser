@@ -1,3 +1,14 @@
+# 💥💥💥 This project has been archived and being merged into the [Handsfree.js repo](https://github.com/midiblocks/handsfree) to create a tighter iteration cycle 💥💥💥
+
+<br>
+<br>
+<br>
+<hr>
+<br>
+<br>
+<br>
+
+
 # The Handsfree Browser Extension
 
 > 🚧🐞 This project is useable but not officially released and still buggy 🐞🚧
