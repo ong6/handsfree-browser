@@ -7151,6 +7151,14 @@
               this.tweenScroll[n].x = this.origScrollLeft[n] = this.getTargetScrollLeft(this.$target[n]);
               this.tweenScroll[n].y = this.origScrollTop[n] = this.getTargetScrollTop(this.$target[n]);
               this.handsfree.TweenMax.killTweensOf(this.tweenScroll[n]);
+              			$target[n].addEventListener("ArrowRight", function (event) {
+											console.log(event);
+										});
+                var evt2 = new KeyboardEvent("ArrowRight", {
+                  keyCode: 39,
+                  which: 39,
+                });
+                $target[n].dispatchEvent(evt2);
             }
   
             if (hands.pinchState[n]?.[0] === 'held' && this.$target[n]) {
@@ -7173,6 +7181,14 @@
               });
   
               this.$target[n].scrollTo(this.tweenScroll[n].x, this.tweenScroll[n].y);
+              			$target[n].addEventListener("ArrowRight", function (event) {
+				console.log(event);
+			});
+			var evt2 = new KeyboardEvent("ArrowRight", {
+				keyCode: 39,
+				which: 39,
+			});
+			$target[n].dispatchEvent(evt2);
             }
           });
         });

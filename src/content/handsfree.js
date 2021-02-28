@@ -54,29 +54,81 @@ handsfree.use("pinchClick", ({ hands }) => {
 			document.dispatchEvent(evt);
 		}
 
-		// if (hands.gesture.name == "gestureCheer") {
-		// 	document.addEventListener("ArrowRight", function (event) {
-		// 		console.log(event);
-		// 	});
-		// 	var evt2 = new KeyboardEvent("ArrowRight", { keyCode: 39, which: 39 });
-		// 	document.dispatchEvent(evt2);
+		// if (!pointer.isVisible || n > hands.origPinch.length) return;
+
+		// // Start scroll
+		// if (hands.pinchState[hand][0] === "start") {
+		// 	let $potTarget = document.elementFromPoint(pointer.x, pointer.y);
+
+		// 	this.$target[n] = this.getTarget($potTarget);
+		// 	this.tweenScroll[n].x = this.origScrollLeft[n] = this.getTargetScrollLeft(
+		// 		this.$target[n]
+		// 	);
+		// 	this.tweenScroll[n].y = this.origScrollTop[n] = this.getTargetScrollTop(
+		// 		this.$target[n]
+		// 	);
+		// 	this.handsfree.TweenMax.killTweensOf(this.tweenScroll[n]);
 		// }
-		if (hands.gesture) {
-			hands.gesture.forEach((gesture, n) => {
-				if (gesture && gesture.name == "gestureCheer") {
-					document.addEventListener("ArrowRight", function (event) {
-						console.log(event);
-					});
-					var evt2 = new KeyboardEvent("ArrowRight", {
-						keyCode: 39,
-						which: 39,
-					});
-					document.dispatchEvent(evt2);
-				}
-			});
-		}
+
+		// if (hands.pinchState[n]?.[0] === "held" && this.$target[n]) {
+		// 	// With this one it continuously moves based on the pinch drag distance
+		// 	this.handsfree.TweenMax.to(this.tweenScroll[n], 1, {
+		// 		x:
+		// 			this.tweenScroll[n].x -
+		// 			(hands.origPinch[n][0].x - hands.curPinch[n][0].x) *
+		// 				width *
+		// 				this.config.speed,
+		// 		y:
+		// 			this.tweenScroll[n].y +
+		// 			(hands.origPinch[n][0].y - hands.curPinch[n][0].y) *
+		// 				height *
+		// 				this.config.speed,
+		// 		overwrite: true,
+		// 		ease: "linear.easeNone",
+		// 		immediateRender: true,
+		// 	});
+
+		// 	this.$target[n].scrollTo(this.tweenScroll[n].x, this.tweenScroll[n].y);
+		// }
 	});
 });
+
+/**
+ * Handle messages from background script
+ */
+chrome.runtime.onMessage.addListener(function (message) {
+	switch (message.action) {
+		case "handsfree-data":
+			handsfree.runPlugins(message.data);
+			break;
+
+		case "handsfree-debug":
+			console.log(message.data);
+			break;
+	}
+});
+
+// if (hands.gesture.name == "gestureCheer") {
+// 	document.addEventListener("ArrowRight", function (event) {
+// 		console.log(event);
+// 	});
+// 	var evt2 = new KeyboardEvent("ArrowRight", { keyCode: 39, which: 39 });
+// 	document.dispatchEvent(evt2);
+// }
+// if (hands.gesture) {
+// 	hands.gesture.forEach((gesture, n) => {
+// 		if (gesture && gesture.name == "gestureCheer") {
+// document.addEventListener("ArrowRight", function (event) {
+// 	console.log(event);
+// });
+// var evt2 = new KeyboardEvent("ArrowRight", {
+// 	keyCode: 39,
+// 	which: 39,
+// });
+// document.dispatchEvent(evt2);
+// 		}
+// 	});
+// }
 
 // handsfree.use("gestureEmojiDetector", ({ hands, handpose }) => {
 // 	if (hands.gesture) {
@@ -142,18 +194,3 @@ handsfree.use("pinchClick", ({ hands }) => {
 // 		});
 // 	}
 // });
-
-/**
- * Handle messages from background script
- */
-chrome.runtime.onMessage.addListener(function (message) {
-	switch (message.action) {
-		case "handsfree-data":
-			handsfree.runPlugins(message.data);
-			break;
-
-		case "handsfree-debug":
-			console.log(message.data);
-			break;
-	}
-});
