@@ -1,3 +1,8 @@
+# Team members
+Ong Jun Xiong
+Liu Yong Liang
+Swaminathan Varun 
+
 # The Youtube-Handsfree Extension
 
 > 🚧🐞 This project is useable but still buggy 🐞🚧
