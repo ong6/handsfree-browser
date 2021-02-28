@@ -1,6 +1,6 @@
 # Team members
-Ong Jun Xiong
-Liu Yong Liang
+Ong Jun Xiong,
+Liu Yong Liang,
 Swaminathan Varun 
 
 # The Youtube-Handsfree Extension
