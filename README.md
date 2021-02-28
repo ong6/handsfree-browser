@@ -22,10 +22,6 @@ handsfree
 # Acknowledgements
 
 - [Handsfree.js](https://handsfree.js.org) Is the engine running our code
-- [Alex Ionkov](http://pages.cs.wisc.edu/~ionkov/) for the original handsfree
-  WebXR Emulator vision, research, and our planning and discussions
-- [Mozilla WebXR Emulator Extension team](https://github.com/MozillaReality/WebXR-emulator-extension)
-  from which the WebXR Emulator Dev Tools was forked from
 
 # Future Developments
 
