@@ -14,7 +14,7 @@ This chrome extension is designed to help you watch youtube hands free!
 By default, each page will get a set of "Palm Pointers" for you to use Youtube
 handsfree
 
-![Pause and play function](https://media.giphy.com/media/vLGJ5UfsYqshPh31O5/giphy.gif)
+![Pause and play function](https://giphy.com/gifs/qOfg0mNDbfoXCV2uWr)
 
 ## How to install
 
